@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bish Bosh</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Bish Bosh 2.0</h1>
+    <p>
+      <strong>Bish Bosh</strong> is a way to change some numbers to string in<br />
+      a loop, in that case the user decides the loop limit and then the<br />
+      dividend and the divisor in the equation and when the loop runs all the<br />
+      numbers that fulfills those conditions turns to "Bish" or "Bosh" or
+      "Bish-Bosh"
+    </p>
+    <div class="form-container">
+      <form id="inputForm">
+        <label for="loopLimit">Loop Limit:</label>
+        <input
+          type="number"
+          id="loopLimit"
+          name="loopLimit"
+          min="1"
+          required
+        /><br />
+
+        <label for="firstDividedNumber">First Divisor Number:</label>
+        <input
+          type="number"
+          id="firstDividedNumber"
+          name="firstDividedNumber"
+          min="1"
+          required
+        /><br />
+
+        <label for="secondDividedNumber">Second Divisor Number:</label>
+        <input
+          type="number"
+          id="secondDividedNumber"
+          name="secondDividedNumber"
+          min="1"
+          required
+        /><br />
+
+        <button type="submit">Generate Bish Bosh</button>
+      </form>
+    </div>
+
+    <ul id="outputList" class="output-list"></ul>
+
+    <script src="BishBosh.js"></script>
+    <footer class="footer mt-auto py-3">
+      <div class="container">
+        <span class="text-muted">Copyright &copy; 2024 by Fadi. A </span>
+      </div>
+    </footer>
+  </body>
+</html>
